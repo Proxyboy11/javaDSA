@@ -9,7 +9,7 @@ public class maze {
         }
         // the total no of ways possible are no of answers from left recursion calls and right calls
         int left = function(row-1 , cols );
-        int right = function(row , cols);
+        int right = function(row , cols-1);
         return left + right ;
     }
 }
